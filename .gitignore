@@ -1,0 +1,7 @@
+**/node_modules
+**/.sass-cache
+**/.sass-cache/**
+**/.tmp
+**/.tmp/**
+**/build
+**/build/**

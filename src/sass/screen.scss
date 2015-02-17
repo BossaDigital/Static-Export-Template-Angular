@@ -1,0 +1,20 @@
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "fonts/Avenir";
+@import "animation/simple";
+
+$black: #000;
+$white: #fff;
+$hoverColor: #0ff;
+
+html{font-size: 62.5%;}
+body,html{
+	width:100%;
+	height:100%;
+	@include experimental(font-smoothing, antialiased);
+	@include experimental(user-select, none);
+	font-family: $Avenir-Medium;
+	color:$black;
+}
