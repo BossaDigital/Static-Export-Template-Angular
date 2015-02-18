@@ -1,4 +1,4 @@
-# Static-Export-Template-Angular
+# Static Export Template Angular
 A boilerplate project to create a statically exporting site.
 
 

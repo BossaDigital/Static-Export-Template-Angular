@@ -72,7 +72,6 @@ gulp.task('webserver', function() {
   gulp.src('./build')
     .pipe(webserver({
       livereload: true,
-      // directoryListing: true,
       open: true,
       fallback: 'index.html'
     }));
@@ -83,7 +82,6 @@ gulp.task('watch', function() {
 	gulp.watch('src/javascripts/**', ['browserify']);
 	gulp.watch('src/images/**', ['images']);
 	gulp.watch('src/bin/**', ['insert-bin']);
-	//gulp.watch(paths.srcImg + "/**/*", ['images']);
 });
 gulp.task('build-all',['sass','templates','browserify','images','insert-bin']);
 gulp.task('default',['watch','webserver']);
