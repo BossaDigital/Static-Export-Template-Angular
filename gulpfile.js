@@ -4,6 +4,7 @@ var gulp 			= require('gulp'),
 	autoPrefixer 	= require('gulp-autoprefixer'),
 	minifyCSS 		= require('gulp-minify-css'),
 	browserify 		= require('gulp-browserify'),
+	uglify 			= require('gulp-uglify'),
 	concat			= require('gulp-concat'),
 	copy 			= require('gulp-copy'),
 	livereload 		= require('gulp-livereload'),
@@ -57,6 +58,7 @@ gulp.task('browserify', function() {
 		console.log(error);
 		this.emit('end');
 	})
+	.pipe(uglify())
 	.pipe(concat('app.js'))
 	.pipe(gulp.dest('build/js'));
 });
